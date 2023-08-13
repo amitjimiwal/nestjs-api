@@ -31,7 +31,6 @@ export class UsersController {
       ...userdetails,
     });
   }
-
   @Delete(':email')
   deleteUser(@Param('email') email: string) {
     return this.userService.deleteUser(email);
